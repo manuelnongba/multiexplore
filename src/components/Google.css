@@ -1,0 +1,9 @@
+.header {
+  padding: 5px 0;
+}
+
+.item {
+  letter-spacing: 1px;
+  padding: 20px;
+  margin-bottom: 8px;
+}
