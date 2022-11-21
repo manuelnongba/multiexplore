@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.header {
+  color: rgb(235, 235, 235) !important;
+}
+
 .video-item.item img {
   max-width: 180px;
 }

@@ -1,3 +1,4 @@
+import "./SearchBar.css";
 import React, { useState } from "react";
 
 const SearchBar = ({ onFormSubmit, onFormSubmitYou, onFormSubmitGoogle }) => {
@@ -17,7 +18,6 @@ const SearchBar = ({ onFormSubmit, onFormSubmitYou, onFormSubmitGoogle }) => {
         <div className="field">
           <label></label>
           <input
-            style={{ border: "1.5px solid black" }}
             type="text"
             value={term}
             onChange={(e) => setTerm(e.target.value)}

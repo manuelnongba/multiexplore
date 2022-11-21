@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Link = ({ className, href, children }) => {
   const onClick = (e) => {
@@ -14,9 +15,9 @@ const Link = ({ className, href, children }) => {
   };
 
   return (
-    <a onClick={onClick} className={className} href={href}>
+    <NavLink onClick={onClick} className={className} to={href}>
       {children}
-    </a>
+    </NavLink>
   );
 };
 

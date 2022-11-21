@@ -1,0 +1,11 @@
+.search-bar {
+  background-color: rgb(15, 15, 15) !important;
+  margin-top: 30px !important;
+  box-shadow: 1px !important;
+}
+
+input {
+  border: 1px solid rgb(255, 255, 255) !important;
+  background-color: rgb(15, 15, 15) !important;
+  color: rgb(255, 255, 255) !important;
+}

@@ -4,7 +4,11 @@ import React from "react";
 const Google = ({ googleResults }) => {
   const renderedGoogleResults = googleResults.map((googleResult) => {
     return (
-      <div key={googleResult.title} className="item">
+      <div
+        style={{ borderBottom: "0.5px solid white", padding: "15px" }}
+        key={googleResult.title}
+        className="item"
+      >
         <div className="content">
           <span
             dangerouslySetInnerHTML={{ __html: googleResult.htmlFormattedUrl }}

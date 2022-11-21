@@ -1,3 +1,12 @@
 .active {
-  color: rgb(56, 132, 208);
+  color: rgb(64, 125, 222) !important;
+  border-color: rgb(64, 125, 222) !important;
+}
+body {
+  background-color: rgb(15, 15, 15);
+  color: rgb(241, 241, 241);
+}
+
+a {
+  color: rgb(241, 241, 241) !important;
 }
