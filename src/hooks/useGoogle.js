@@ -7,6 +7,7 @@ const useGoogle = (defaultSearchTerm) => {
 
   const cxKey = "016b426eac6ca44da";
 
+  //INSERT YOUR GOOGLE API KEY
   const searchGoogle = async (term) => {
     const response = await axios.get(
       `https://www.googleapis.com/customsearch/v1?key=${SEARCHKEY}&cx=${cxKey}&q=${term}`

@@ -8,6 +8,7 @@ const useSearch = (defaultSearchTerm) => {
     search(defaultSearchTerm);
   }, [defaultSearchTerm]);
 
+  //INSERT YOUR WIKIPEDIA API KEY
   const search = async (term) => {
     const { data } = await axios.get("https://en.wikipedia.org/w/api.php", {
       params: {
