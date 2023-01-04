@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="ui container">
-      <HashRouter basename="/multiexplore">
+      <HashRouter>
         <SearchBar
           onFormSubmit={search}
           onFormSubmitYou={searchVid}
