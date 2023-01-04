@@ -32,11 +32,11 @@ const App = () => {
         />
         <Header />
 
-        <Route path="/">
+        <Route exact path="/">
           <SearchList results={results} />
         </Route>
 
-        <Route path="/youtube">
+        <Route exact path="/youtube">
           <div className="ui grid">
             <div className="ui row">
               <div className="eleven wide column">
@@ -49,7 +49,7 @@ const App = () => {
           </div>
         </Route>
 
-        <Route path="/google">
+        <Route exact path="/google">
           <Google googleResults={googleResults} />
         </Route>
       </HashRouter>
