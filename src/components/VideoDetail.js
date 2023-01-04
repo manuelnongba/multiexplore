@@ -10,7 +10,7 @@ const VideoDetail = ({ video }) => {
   return (
     <div>
       <div className="ui embed">
-        <iframe title="Video Detail" src={videoSrc} allow=" autoplay;"></iframe>
+        <iframe title="Video Detail" src={videoSrc} allow="autoplay;"></iframe>
       </div>
       <div style={{ backgroundColor: "black" }} className="ui segment">
         <h4 className="ui header">{video.snippet.title}</h4>
