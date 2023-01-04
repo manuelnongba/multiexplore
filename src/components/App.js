@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import useGoogle from "../hooks/useGoogle";
 import useSearch from "../hooks/useSearch";
 import useVideos from "../hooks/useVideos";
