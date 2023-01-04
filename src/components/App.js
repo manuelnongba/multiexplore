@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import useGoogle from "../hooks/useGoogle";
 import useSearch from "../hooks/useSearch";
 import useVideos from "../hooks/useVideos";
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="ui container">
-      <HashRouter>
+      <BrowserRouter basename="/multiexplore">
         <SearchBar
           onFormSubmit={search}
           onFormSubmitYou={searchVid}
@@ -52,7 +52,7 @@ const App = () => {
         <Route exact path="/google">
           <Google googleResults={googleResults} />
         </Route>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };
