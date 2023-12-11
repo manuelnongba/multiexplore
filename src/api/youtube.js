@@ -1,13 +1,13 @@
-import axios from "axios";
-import KEY from "./config";
+import axios from 'axios';
+import { YOUTUBEKEY } from './config';
 
 //INSERT YOUR YOUTUBE API KEY
 export default axios.create({
-  baseURL: "https://www.googleapis.com/youtube/v3",
+  baseURL: 'https://www.googleapis.com/youtube/v3',
   params: {
-    part: "snippet",
+    part: 'snippet',
     maxResults: 10,
-    key: KEY,
-    type: "video",
+    key: YOUTUBEKEY,
+    type: 'video',
   },
 });

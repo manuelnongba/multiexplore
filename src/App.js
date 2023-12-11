@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
-import useGoogle from "../hooks/useGoogle";
-import useSearch from "../hooks/useSearch";
-import useVideos from "../hooks/useVideos";
-import Google from "./Google";
-import Header from "./Header";
-import Route from "./Route";
-import SearchBar from "./SearchBar";
-import SearchList from "./SearchList";
-import VideoDetail from "./VideoDetail";
-import VideoList from "./VideoList";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import useGoogle from './hooks/useGoogle';
+import useSearch from './hooks/useSearch';
+import useVideos from './hooks/useVideos';
+import Google from './components/Google';
+import Header from './components/Header';
+import Route from './components/Route';
+import SearchBar from './components/SearchBar';
+import SearchList from './components/SearchList';
+import VideoDetail from './components/VideoDetail';
+import VideoList from './components/VideoList';
 
 const App = () => {
-  const [results, search] = useSearch("programming");
-  const [videos, searchVid] = useVideos("programming");
-  const [googleResults, searchGoogle] = useGoogle("music");
+  const [results, search] = useSearch('programming');
+  const [videos, searchVid] = useVideos('programming');
+  const [googleResults, searchGoogle] = useGoogle('music');
 
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="ui container">
-      <HashRouter>
+      <BrowserRouter>
         <SearchBar
           onFormSubmit={search}
           onFormSubmitYou={searchVid}
@@ -52,7 +52,7 @@ const App = () => {
         <Route exact path="/google">
           <Google googleResults={googleResults} />
         </Route>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };

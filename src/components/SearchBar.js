@@ -1,8 +1,8 @@
-import "./SearchBar.css";
-import React, { useState } from "react";
+import '../styles/SearchBar.css';
+import React, { useState } from 'react';
 
 const SearchBar = ({ onFormSubmit, onFormSubmitYou, onFormSubmitGoogle }) => {
-  const [term, setTerm] = useState("");
+  const [term, setTerm] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();

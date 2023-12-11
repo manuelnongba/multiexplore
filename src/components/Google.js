@@ -1,11 +1,11 @@
-import "./Google.css";
-import React from "react";
+import '../styles/Google.css';
+import React from 'react';
 
 const Google = ({ googleResults }) => {
   const renderedGoogleResults = googleResults.map((googleResult) => {
     return (
       <div
-        style={{ borderBottom: "0.5px solid white", padding: "15px" }}
+        style={{ borderBottom: '0.5px solid white', padding: '15px' }}
         key={googleResult.title}
         className="item"
       >

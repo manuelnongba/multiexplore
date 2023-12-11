@@ -1,12 +1,12 @@
-import "./SearchList.css";
-import React from "react";
+import '../styles/SearchList.css';
+import React from 'react';
 
 const SearchList = ({ results }) => {
   const renderedResults = results.map((result) => {
     return (
       <div
         key={result.pageid}
-        style={{ borderBottom: "0.5px solid white", padding: "15px" }}
+        style={{ borderBottom: '0.5px solid white', padding: '15px' }}
         className="item"
       >
         <div className="content">

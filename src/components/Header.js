@@ -1,11 +1,11 @@
-import "./Header.css";
-import React from "react";
-import Link from "./Link";
+import '../styles/Header.css';
+import React from 'react';
+import Link from './Link';
 
 const Header = () => {
   return (
     <div
-      style={{ borderBottom: "0.5px solid white" }}
+      style={{ borderBottom: '0.5px solid white' }}
       className="ui secondary pointing menu"
     >
       <Link href="/" className="item">
