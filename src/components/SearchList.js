@@ -2,7 +2,10 @@ import '../styles/SearchList.css';
 import React from 'react';
 
 const SearchList = ({ results }) => {
-  if (!results.length) {
+  if (!results) {
+    return <div>Loading...</div>;
+  }
+  if (!results?.length) {
     return <div>No results found</div>;
   }
   const renderedResults = results.map((result) => {

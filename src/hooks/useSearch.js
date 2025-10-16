@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useSearch = (defaultSearchTerm) => {
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState(null);
 
   useEffect(() => {
     search(defaultSearchTerm);
