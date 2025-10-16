@@ -1,14 +1,18 @@
 import '../styles/SearchBar.css';
 import React, { useState } from 'react';
 
-const SearchBar = ({ onFormSubmit, onFormSubmitYou, onFormSubmitGoogle }) => {
+const SearchBar = ({
+  onFormSubmit,
+  onFormSubmitYouTube,
+  onFormSubmitGoogle,
+}) => {
   const [term, setTerm] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     onFormSubmit(term);
-    onFormSubmitYou(term);
+    onFormSubmitYouTube(term);
     onFormSubmitGoogle(term);
   };
 

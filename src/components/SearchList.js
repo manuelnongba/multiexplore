@@ -2,6 +2,9 @@ import '../styles/SearchList.css';
 import React from 'react';
 
 const SearchList = ({ results }) => {
+  if (!results.length) {
+    return <div>No results found</div>;
+  }
   const renderedResults = results.map((result) => {
     return (
       <div
@@ -22,6 +25,7 @@ const SearchList = ({ results }) => {
       </div>
     );
   });
+
   return <div className="ui celled list">{renderedResults}</div>;
 };
 

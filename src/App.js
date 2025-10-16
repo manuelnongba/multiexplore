@@ -14,7 +14,7 @@ import VideoList from './components/VideoList';
 const App = () => {
   const [results, search] = useSearch('programming');
   const [videos, searchVid] = useVideos('programming');
-  const [googleResults, searchGoogle] = useGoogle('music');
+  const [googleResults, searchGoogle] = useGoogle('programming');
 
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -27,7 +27,7 @@ const App = () => {
       <BrowserRouter>
         <SearchBar
           onFormSubmit={search}
-          onFormSubmitYou={searchVid}
+          onFormSubmitYouTube={searchVid}
           onFormSubmitGoogle={searchGoogle}
         />
         <Header />

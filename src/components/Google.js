@@ -2,6 +2,9 @@ import '../styles/Google.css';
 import React from 'react';
 
 const Google = ({ googleResults }) => {
+  if (!googleResults) {
+    return <div>No results found</div>;
+  }
   const renderedGoogleResults = googleResults.map((googleResult) => {
     return (
       <div
